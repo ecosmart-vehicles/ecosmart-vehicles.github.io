@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Home - EcoSmart</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-success" href="index.html">
+        <img src="images/Logo/eco_logo.jpeg" alt="EcoSmart" tooltip="EcoSmart" style="width: 100px;">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <!-- <li class="nav-item">
+          <a class="nav-link" href="#models">Models</a>
+        </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-success" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- Left Content -->
+        <div class="col-lg-6 hero-content">
+          <span class="hero-badge">Eco-Friendly Electric Mobility</span>
+
+          <h1>
+            Reliable <span>E-Rickshaws</span><br>
+            Built for Indian Roads
+          </h1>
+
+          <p>
+            High performance, low maintenance electric rickshaws
+            designed to maximize comfort and daily earnings.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#models" class="btn btn-success btn-lg" style="font-size: 16px;">View Models</a>
+            <a href="about.html" class="btn btn-outline-success btn-lg" style="font-size: 16px;">About Us</a>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="col-lg-6 text-center hero-image">
+          <img src="images/hero_img.png" alt="E-Rickshaw">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About Block -->
+  <section class="section about-block">
+
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6" data-aos="fade-right">
+          <h2>About Us</h2>
+          <p>
+            <b>Eco Smart Vehicles Pvt. Ltd.</b>, established in <b>2016</b>, is a leading manufacturer and solution
+            provider in the
+            <b>three-wheeler electric vehicle (3W EV)</b> segment. With a strong commitment to sustainable mobility, we
+            specialize in designing, manufacturing, and supplying reliable, cost-effective, and high-performance
+            electric three-wheelers for passenger and cargo applications.
+          </p>
+          <a href="about.html" class="read-more">
+            Read More <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <img src="images/about_img.png" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Models -->
+  <section id="models" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Our Models</h2>
+
+      <div class="row mt-4">
+        <div class="col-md-4" data-aos="zoom-in">
+          <a href="products.html#rickshaw" style="text-decoration: none; color: #000;">
+            <div class="card-box">
+              <img src="images/models/passenger_rickshaw.png">
+              <h5>Passenger E-Rickshaw</h5>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+          <a href="products.html#loader" style="text-decoration: none; color: #000;">
+            <div class="card-box">
+              <img src="images/models/loader_rickshaw.png">
+              <h5>Loader E-Rickshaw</h5>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card-box">
+            <img src="images/models/premium_rickshaw.png">
+            <h5>Premium E-Rickshaw</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services-section-bg py-5">
+    <div class="overlay"></div>
+
+    <div class="container position-relative">
+      <div class="text-center mb-5 text-white">
+        <h2 class="fw-bold">Our Services</h2>
+        <p>Complete Support for Your Electric Mobility Journey</p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-6">
+          <div class="service-card-bg text-center">
+            <i class="bi bi-shop"></i>
+            <h5>Sales & Dealership</h5>
+            <p>Authorized sales and dealership opportunities across regions.</p>
+          </div>
+        </div>
+
+        <!-- <div class="col-md-6 col-lg-4">
+        <div class="service-card-bg text-center">
+          <i class="bi bi-tools"></i>
+          <h5>Spare Parts Supply</h5>
+          <p>Genuine spare parts for long-lasting performance.</p>
+        </div>
+      </div> -->
+        <div class="col-md-6 col-lg-6">
+          <div class="service-card-bg text-center">
+            <i class="bi bi-gear"></i>
+            <h5>Service & Repair</h5>
+            <p>Professional maintenance and repair services.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card-bg text-center">
+            <i class="bi bi-battery-charging"></i>
+            <h5>Battery Replacement</h5>
+            <p>High-quality batteries with warranty assurance.</p>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card-bg text-center">
+            <i class="bi bi-cash-coin"></i>
+            <h5>Financing Assistance</h5>
+            <p>Easy finance options with partner banks.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card-bg text-center">
+            <i class="bi bi-shield-check"></i>
+            <h5>Warranty Support</h5>
+            <p>Reliable warranty and after-sales support.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Portfolio -->
+  <!-- <section class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Our Work</h2>
+
+      <div class="row mt-4">
+        <div class="col-md-4" data-aos="fade-up">
+          <img src="images/work1.jpg" class="portfolio-img">
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+          <img src="images/work2.jpg" class="portfolio-img">
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <img src="images/work3.jpg" class="portfolio-img">
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section py-5" id="contact">
+    <div class="container">
+
+      <div class="section-title text-center mb-5">
+        <h2>Get in <span>Touch</span></h2>
+        <p>We are here to help you with all your electric mobility needs.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- CONTACT INFO -->
+        <div class="col-lg-5">
+          <div class="contact-box">
+            <h4>Contact Information</h4>
+
+            <p><i class="bi bi-geo-alt-fill"></i> Sonipat, Haryana, India</p>
+            <p><i class="bi bi-telephone-fill"></i> +91 90343 39304</p>
+            <p><i class="bi bi-envelope-fill"></i> info@ecosmartvehicles.com</p>
+
+            <div class="contact-social">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="col-lg-7">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeu7i3pXuNI6NlAFTD0J7Tj8FxOgOXIwPhNv7xGaq_lLX20pw/viewform?embedded=true" width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <!-- <div id="contact" class="contact-form">
+            <form action="https://formspree.io/f/meeljpdd" method="post">
+              <div class="row">
+
+                <div class="col-md-6 mb-3">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                  <input type="text" name="subject" class="form-control" placeholder="Subject">
+                </div>
+
+                <div class="col-md-12 mb-3">
+                  <textarea name="message" class="form-control" rows="5" placeholder="Your Message"></textarea>
+                </div>
+
+                <div class="col-md-12">
+                  <button class="btn btn-success px-4">Send Message</button>
+                </div>
+                <input type="hidden" name="_next" value="EcoSmart/index.html">
+              </div>
+            </form>
+          </div> -->
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- ABOUT -->
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer-title">Eco Smart Vehicles Pvt. Ltd.</h4>
+          <p>
+            Leading manufacturer of electric three-wheelers delivering
+            reliable, cost-effective and sustainable mobility solutions
+            for passenger and cargo transportation.
+          </p>
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- SERVICES -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Our Services</h4>
+          <ul class="footer-links">
+            <li>EV Repair & Maintenance</li>
+            <li>Battery Service</li>
+            <li>On-Road Assistance</li>
+          </ul>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Contact Us</h4>
+          <p><i class="bi bi-geo-alt-fill" style="color: #0f5fb6;"></i> Sonipat, Haryana, India</p>
+          <p><i class="bi bi-telephone-fill" style="color: #0f5fb6;"></i> +91 90343 39304</p>
+          <p><i class="bi bi-envelope-fill" style="color: #0f5fb6;"></i> info@ecosmartvehicles.com</p>
+
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="footer-line">
+
+      <div class="text-center">
+        <p class="mb-0">© 2026 Eco Smart Vehicles Pvt. Ltd. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - EcoSmart</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-success" href="index.html">
+                <img src="images/Logo/eco_logo.jpeg" alt="EcoSmart" tooltip="EcoSmart" style="width: 100px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-success" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- HERO -->
+    <section class="product-hero">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Our Products</h1>
+            <p>Built Strong. Built Smart. Built EcoSmart.</p>
+        </div>
+    </section>
+    <div class="container py-5">
+
+        <div class="row" id="rickshaw">
+
+            <!-- LEFT: Images -->
+            <div class="col-md-6">
+                <img id="mainImage_rickshaw" src="images/products/e-rickshaw/rickshaw1.png" class="main-img mb-3">
+
+                <div class="d-flex gap-3">
+                    <img src="images/products/e-rickshaw/rickshaw1.png" class="thumb-img" onclick="changeImage_rickshaw(this)">
+                    <img src="images/products/e-rickshaw/rickshaw_sideview.png" class="thumb-img"
+                        onclick="changeImage_rickshaw(this)">
+                    <!-- <img src="https://via.placeholder.com/600x400?text=Battery+View" class="thumb-img" onclick="changeImage(this)"> -->
+                </div>
+            </div>
+
+            <!-- RIGHT: Details -->
+            <div class="col-md-6">
+
+                <h2 class="fw-bold">E-Rickshaw Deluxe Model</h2>
+
+                <!-- <span class="stock-badge text-white">In Stock</span> -->
+
+                <!-- <div class="mt-3">
+                <span class="price">₹1,45,000</span>
+                <span class="old-price">₹1,60,000</span>
+            </div> -->
+
+                <p class="mt-3 text-muted">
+                    High performance electric rickshaw with powerful motor,
+                    long battery life and heavy-duty suspension.
+                    Perfect for commercial and passenger transport.
+                </p>
+                <div class="row" style="font-size: 15px;">
+                    <div class="col-md-3">
+                        <p>✔ 1000W Motor</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>✔ 120KM Range</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>✔ 48V Battery</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>✔ Fast Charging</p>
+                    </div>
+                </div>
+                <div class="row text-center">
+
+                    <div class="col-md-6">
+                        <div class="feature-box">
+                            <h5 style="color:#28a745;">High Mileage</h5>
+                            <p class="small text-muted">Up to 120KM in single charge</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="feature-box">
+                            <h5 style="color:#28a745;">Eco Friendly</h5>
+                            <p class="small text-muted">Zero Emission Vehicle</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3 text-center">
+                    <div class="col-md-6">
+                        <div class="feature-box">
+                            <h5 style="color:#28a745;">Heavy Load</h5>
+                            <p class="small text-muted">Strong Chassis Frame</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="feature-box">
+                            <h5 style="color:#28a745;">Low Maintenance</h5>
+                            <p class="small text-muted">Cost Effective Solution</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Quantity -->
+                <!-- <div class="d-flex align-items-center mt-3">
+                <button class="btn btn-outline-secondary" onclick="decreaseQty()">-</button>
+                <input type="text" id="quantity" value="1" class="form-control mx-2 qty-box">
+                <button class="btn btn-outline-secondary" onclick="increaseQty()">+</button>
+            </div>
+
+            <div class="mt-4">
+                <button class="btn btn-success px-4 me-2">Enquire Now</button>
+                <button class="btn btn-dark px-4">Download Brochure</button>
+            </div> -->
+
+            </div>
+        </div>
+
+        <!-- Features Section -->
+
+        <div class="row mt-5" id="loader">
+
+            <!-- LEFT SIDE -->
+            <div class="col-md-6">
+                <img id="mainImage_loader" src="images/products/e-loader/loader1.png" class="main-img mb-3">
+
+                <div class="d-flex gap-3">
+                    <img src="images/products/e-loader/loader1.png" class="thumb-img"
+                        onclick="changeImage_loader(this)">
+                    <img src="images/products/e-loader/loader_sideview.png" class="thumb-img"
+                        onclick="changeImage_loader(this)">
+                    <!-- <img src="https://via.placeholder.com/600x400?text=Loading+Area" class="thumb-img"
+                        onclick="changeImage(this)"> -->
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="col-md-6">
+
+                <h2 class="fw-bold">E-Loader Cargo Pro 1000</h2>
+                <p class="text-muted">Heavy-Duty Electric Cargo Vehicle</p>
+
+                <!-- <div class="price mb-3">₹1,85,000</div> -->
+
+                <p>
+                    Powerful electric cargo loader designed for heavy commercial use.
+                    Ideal for transporting goods in urban and semi-urban areas with
+                    excellent mileage and low maintenance cost.
+                </p>
+                 <div class="row" style="font-size: 15px;">
+                    <div class="col-md-3">
+                        <p>✔ 1200W High Torque Motor</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>✔ 150KM Range Per Charge</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>✔ 800KG Load Capacity</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>✔ 48V / 60V Battery Options</p>
+                    </div>
+                </div>
+                <div class="row text-center">
+
+            <div class="col-md-6">
+                     <div class="feature-box">
+                            <h5 style="color:#28a745;">High Load Capacity</h5>
+                    <p class="small text-muted">Carry up to 800KG with strong chassis</p>
+                
+                </div>
+            </div>
+
+            <div class="col-md-6">
+               <div class="feature-box">
+                            <h5 style="color:#28a745;">Long Battery Life</h5>
+                    <p class="small text-muted">Up to 150KM per charge</p>
+                </div>
+            </div>
+</div>
+                <div class="row mt-3 text-center">
+            <div class="col-md-6">
+               <div class="feature-box">
+                            <h5 style="color:#28a745;">Eco Friendly</h5>
+                    <p class="small text-muted">Zero emission cargo solution</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="feature-box">
+                            <h5 style="color:#28a745;">Low Maintenance</h5>
+                    <p class="small text-muted">Cost effective commercial use</p>
+                </div>
+            </div>
+
+        </div>
+                <!-- <ul class="list-unstyled">
+                    <li>✔ 1200W High Torque Motor</li>
+                    <li>✔ 150KM Range Per Charge</li>
+                    <li>✔ 800KG Load Capacity</li>
+                    <li>✔ 48V / 60V Battery Options</li>
+                    <li>✔ Fast Charging Support</li>
+                </ul> -->
+
+                <!-- <button class="btn btn-success px-4 mt-3" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+        Enquire Now
+    </button> -->
+
+            </div>
+        </div>
+
+        <!-- HIGHLIGHTS -->
+        
+
+        <!-- TABS SECTION -->
+        <div class="row mt-5">
+            <div class="col-12">
+
+                <ul class="nav nav-tabs" id="productTab" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active" data-bs-toggle="tab"
+                            data-bs-target="#description">Description</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="tab"
+                            data-bs-target="#specification">Specifications</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#features">Features</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content p-4 bg-white">
+
+                    <div class="tab-pane fade show active" id="description">
+                        E-Loader Cargo Pro 1000 is specially engineered for
+                        heavy-duty cargo transportation. Built with reinforced
+                        chassis and high torque motor, it ensures reliable performance
+                        in commercial operations.
+                    </div>
+
+                    <div class="tab-pane fade" id="specification">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><strong>Motor:</strong> 1200W</p>
+                                <p><strong>Battery:</strong> 48V / 60V</p>
+                                <p><strong>Range:</strong> 120-150 KM</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><strong>Top Speed:</strong> 45 km/h</p>
+                                <p><strong>Load Capacity:</strong> 800 KG</p>
+                                <p><strong>Charging Time:</strong> 4-5 Hours</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="features">
+                        <ul>
+                            <li>Heavy Duty Suspension</li>
+                            <li>LED Headlights</li>
+                            <li>Digital Meter</li>
+                            <li>Hydraulic Brakes</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- ABOUT -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="footer-title">Eco Smart Vehicles Pvt. Ltd.</h4>
+                    <p>
+                        Leading manufacturer of electric three-wheelers delivering
+                        reliable, cost-effective and sustainable mobility solutions
+                        for passenger and cargo transportation.
+                    </p>
+                </div>
+
+                <!-- QUICK LINKS -->
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- SERVICES -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Our Services</h4>
+                    <ul class="footer-links">
+                        <li>EV Repair & Maintenance</li>
+                        <li>Battery Service</li>
+                        <li>On-Road Assistance</li>
+                    </ul>
+                </div>
+
+                <!-- CONTACT -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <p><i class="bi bi-geo-alt-fill" style="color: #0f5fb6;"></i> Sonipat, Haryana, India</p>
+                    <p><i class="bi bi-telephone-fill" style="color: #0f5fb6;"></i> +91 90343 39304</p>
+                    <p><i class="bi bi-envelope-fill" style="color: #0f5fb6;"></i> info@ecosmartvehicles.com</p>
+
+
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="footer-line">
+
+            <div class="text-center">
+                <p class="mb-0">© 2026 Eco Smart Vehicles Pvt. Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        function changeImage_rickshaw(element) {
+            document.getElementById("mainImage_rickshaw").src = element.src;
+        }
+        function changeImage_loader(element) {
+            document.getElementById("mainImage_loader").src = element.src;
+        }
+        // function increaseQty() {
+        //     let qty = document.getElementById("quantity");
+        //     qty.value = parseInt(qty.value) + 1;
+        // }
+
+        // function decreaseQty() {
+        //     let qty = document.getElementById("quantity");
+        //     if (qty.value > 1) {
+        //         qty.value = parseInt(qty.value) - 1;
+        //     }
+        // }
+
+    </script>
+
+</body>
+
+</html>
